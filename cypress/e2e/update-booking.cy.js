@@ -32,4 +32,13 @@ describe('Update Booking', () => {
             expect(response.status).to.eql(200)
         })
     })
+
+    it('Atualizar reserva com id inavalido', () => {
+
+        var bookingid_invalido = 1123456
+        cy.atualizarReserva(bookingid_invalido, body_atualizar_reserva, token)
+        .then((response)=>{
+            expect(response.status).to.eql(405)
+        })
+    })
 })
