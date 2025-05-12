@@ -1,0 +1,11 @@
+{
+    "firstname": "diego",
+    "lastname": "sousa",
+    "totalprice": 200,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-05-10",
+        "checkout": "2019-05-15"
+    },
+    "additionalneeds": "Breakfast"
+}
