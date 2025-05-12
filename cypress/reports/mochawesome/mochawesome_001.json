@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-12T23:40:55.304Z",
+    "end": "2025-05-12T23:40:56.133Z",
+    "duration": 829,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8497bc6e-4dcf-4071-9dc3-fbe771f2b3b3",
+      "title": "",
+      "fullFile": "cypress/e2e/update-booking.cy.js",
+      "file": "cypress/e2e/update-booking.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "35543bc0-805b-47e0-842d-be9bc9c125f3",
+          "title": "Update Booking",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Atualizar reserva",
+              "fullTitle": "Update Booking Atualizar reserva",
+              "timedOut": null,
+              "duration": 479,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.atualizarReserva(bookingid, body_atualizar_reserva, token).then(response => {\n  expect(response.status).to.eql(200);\n});",
+              "err": {},
+              "uuid": "56df9520-c5ba-425b-8694-adaf80ee2c5e",
+              "parentUUID": "35543bc0-805b-47e0-842d-be9bc9c125f3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Atualizar reserva com id inavalido",
+              "fullTitle": "Update Booking Atualizar reserva com id inavalido",
+              "timedOut": null,
+              "duration": 323,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var bookingid_invalido = 1123456;\ncy.atualizarReserva(bookingid_invalido, body_atualizar_reserva, token).then(response => {\n  expect(response.status).to.eql(405);\n});",
+              "err": {},
+              "uuid": "f522d54f-4dbe-4f23-ab9f-2eafa7d476d6",
+              "parentUUID": "35543bc0-805b-47e0-842d-be9bc9c125f3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "56df9520-c5ba-425b-8694-adaf80ee2c5e",
+            "f522d54f-4dbe-4f23-ab9f-2eafa7d476d6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 802,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
