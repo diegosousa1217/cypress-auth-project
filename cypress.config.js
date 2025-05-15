@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl: 'https://restful-booker.herokuapp.com',
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
@@ -9,7 +10,7 @@ module.exports = defineConfig({
   reporter: 'mochawesome',
   reporterOptions: {
     reportDir: 'cypress/reports/mochawesome',
-    overwrite: true,
+    overwrite: false,
     html: true,
     json: false
   }

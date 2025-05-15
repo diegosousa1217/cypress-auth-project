@@ -63,5 +63,3 @@ cypress/
 ## ✍️ Autor
 
 - Diego Sousa — https://github.com/diegosousa1217
-
-
