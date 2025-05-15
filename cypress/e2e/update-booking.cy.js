@@ -4,6 +4,7 @@ describe('Update Booking', () => {
 
     var token = null
     var bookingid = null
+    
     const body_criar_reserva = require('../fixtures/criar.reserva.json')
     const body_atualizar_reserva = require('../fixtures/atualizar.reserva.json')
 
